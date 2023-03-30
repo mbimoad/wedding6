@@ -1,0 +1,345 @@
+:root {
+    --toskamuda: #8ba38c;
+    --toskatua: #4f5c50;
+}
+@font-face {
+	font-family:'n1';
+	src: url('../plugin/font/normal/n1.ttf') format('truetype');
+}
+@font-face {
+	font-family:'n2';
+	src: url('../plugin/font/normal/n2.ttf') format('truetype');
+}
+@font-face {
+	font-family:'n3';
+	src: url('../plugin/font/normal/n3.ttf') format('truetype');
+}
+@font-face {
+	font-family:'n4';
+	src: url('../plugin/font/normal/n4.ttf') format('truetype');
+}
+@font-face {
+	font-family:'n5';
+	src: url('../plugin/font/normal/n5.ttf') format('truetype');
+}
+@font-face {
+	font-family:'n6';
+	src: url('../plugin/font/normal/n6.ttf') format('truetype');
+}
+@font-face {
+	font-family:'n7';
+	src: url('../plugin/font/normal/n7.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s1';
+	src: url('../plugin/font/sambung/s1.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s2';
+	src: url('../plugin/font/sambung/s2.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s3';
+	src: url('../plugin/font/sambung/s3.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s4';
+	src: url('../plugin/font/sambung/s4.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s5';
+	src: url('../plugin/font/sambung/s5.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s6';
+	src: url('../plugin/font/sambung/s6.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s7';
+	src: url('../plugin/font/sambung/s7.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s8';
+	src: url('../plugin/font/sambung/s8.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s9';
+	src: url('../plugin/font/sambung/s9.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s10';
+	src: url('../plugin/font/sambung/s10.ttf') format('truetype');
+}
+
+* {
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+} body {
+    overflow-x:hidden;
+    font-family: n4;
+} .people {
+    background-color:var(--toskamuda);
+    border-radius: 300px;
+    width: 200px;
+    position: relative;
+    
+} .paslon-image {
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--toskatua);
+    border-radius: 50%;  
+} .laki {
+    background-image: url('14.webp');
+    background-size:280px;
+    background-position: 10px -20px;
+    background-repeat: no-repeat;
+} .perempuan {
+    background-image: url('14.webp');
+    background-size:280px;
+    background-position: -120px -50px;
+    background-repeat: no-repeat;
+}
+
+.times {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+} .relative {
+    position: relative;
+} .absolute {
+    position: absolute;
+} .frame {
+    width: 260px;
+    left: -30px;
+    top: -20px;
+} .wedding {
+    margin: auto;
+    width: 200px;
+} .dashboard {
+    background-image: url('2.webp');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .font_s1 {
+    font-family: s1;
+    font-size: 3rem;
+} .font_s6 {
+    font-family: s6;
+    font-size: 2rem;
+} .time {
+    background-color:var(--toskatua);
+    color:white;
+    width: 100px;
+    border-radius: 50px;
+} .absensi {
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0 5px;
+    color:white;
+    background-color: var(--toskamuda);
+} .undangan {
+    font-size: 1.5rem;
+    
+}
+
+.myicon {
+    display: none;
+    color:white;
+    text-align: center;
+    width: 35px;
+    height: 34px;
+    padding: 5px;
+    border-radius: 50%;
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    bottom: 50%;
+    z-index: 9999999999999999999999999999999999;
+    background: var(--toskatua);
+}
+
+
+.invite {
+    transition: all 500ms ease 0s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999999999999999999999999999999999999999999;
+    background: url('2.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} .invite button {
+    border: unset;
+    background:var(--toskamuda);
+    color:white;
+    transition: all 200ms ease 0s;
+} .invite button:hover {
+    background:var(--toskatua);
+} .buka {
+    transform: translate(0, -100%);
+    opacity: 0;
+} .bismillah {
+    width: 200px;
+} .paslon {
+    background-image: url('2.webp');
+    background-size: cover;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+} .notes {
+    
+    position: relative;
+    width: 90%;
+    border: 5px double var(--toskamuda);
+    margin: auto;
+    background-color:var(--toskatua);
+    padding: 20px;
+    color:white;
+} .love-story {
+    background-image: url('2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+} .fa-heart {
+    background-color: var(--toskatua);
+    color:white;
+    padding: 5px;
+    border-radius: 50px;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    z-index: 99;
+} .love-box {
+    display: flex;
+} .notes::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--toskatua);
+    position: absolute;
+    left: -10px;
+    top: -8px;
+    border-radius: 50px 0 0 0;
+    transform: rotate(45deg);
+} 
+footer,
+.komentar,
+.save-the-date {
+    background-image: url('2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+} .save-the-date .card h5 {
+    font-weight: bold;
+    color:var(--toskatua); 
+} 
+.input {
+    border: 3px double var(--toskatua);
+} form {
+    background-color:var(--toskamuda);
+    padding: 20px;
+    border-radius: 30px;
+    color:white;
+} form button {
+    background-color:var(--toskatua);
+}
+
+
+.save-the-date .card,
+.amplop .card {
+    box-shadow: 0px 15px 15px var(--toskatua);
+} .btn-primary {
+    background-color: var(--toskamuda);
+    border: unset;
+} .btn-primary:hover {
+    background-color: var(--toskatua);
+} .btn-primary:active {
+    background-color: var(--toskamuda);
+} .bank {
+    width: 100px;
+} .protocol {
+    padding: 10px;
+    color:white;
+    background-color:var(--toskatua);
+    border-radius:10px;
+} .banner .banner-img {
+    filter: hue-rotate(157deg) invert(0);
+    left: 0;
+    top: -100px;
+    right: 0;
+    width: 100vw;
+    position: absolute;
+    height: 300px;
+} .banner p {
+    position: absolute;
+    top: 120px;
+} .komentar::after {
+    content: '';
+    display: block;
+    height: 100px;
+    background-size: cover;
+} .shopee {
+    text-decoration: none;
+    color:var(--color1);
+    transition: all 200ms ease 0s;
+    color:white; 
+}  .copyright {
+    padding: 20px 20px 80px 20px;
+    background-color: var(--toskatua);
+} .nav {
+    display: none;
+    box-shadow: 0 0 5px var(--toskamuda);
+    position: fixed;
+    bottom: 20px;
+    border-radius: 150px;
+    left: 0;
+    right: 0;
+    z-index: 999999999999999999999999999999999;
+    background-color: var(--toskatua);
+    width: 95%;
+    padding: 10px 0;
+    margin: auto;
+} .nav a {
+    color:white;
+} .hilang {
+    transform: translate(0px, -30px);
+    opacity: 0;
+    transition: all 500ms ease 0s;
+} .muncul {
+    transform: translate(0px, 0px);
+    opacity: 1;
+} .comments-box {
+    height: 250px;
+    overflow:auto;
+}
+
+@media screen and (max-width:683px) {
+    .time {
+        width: 55px;
+    } 
+    .paslon,
+    footer,
+    .komentar,
+    .save-the-date,
+    .love-story,
+    .dashboard {
+        background-position: -150px 0;
+    } .mybox .col-md-4 {
+        background-color: var(--toskatua);
+        color:white
+    } .banner p {
+        top: 100px;
+    } .banner .banner-img {
+        height: 200px;
+    }
+}
+
